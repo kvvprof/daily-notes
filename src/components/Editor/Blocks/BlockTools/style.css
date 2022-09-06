@@ -1,0 +1,63 @@
+.block-tools {
+	position: absolute;
+	top: 0;
+	right: -25px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.block-tools__tool {
+	cursor: pointer;
+
+	z-index: 10;
+
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+
+	text-align: center;
+
+	opacity: 0.3;
+	background-color: var(--btn-regular);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid var(--btn-regular);
+	border-radius: 5px;
+
+	transition: 0.3s;
+}
+
+.block-tools__tool:hover {
+	opacity: 1;
+	border: 1px solid var(--btn-accent);
+
+	transition: 0.3s;
+}
+
+.block-tools__arrow-up {
+	background-image: url('../../../../assets/arrowUp.svg');
+	background-size: 25px;
+}
+
+.block-tools__delete {
+	background-image: url('../../../../assets/trash.svg');
+	background-size: 14px;
+}
+
+.block-tools__arrow-down {
+	background-image: url('../../../../assets/arrowDown.svg');
+	background-size: 25px;
+}
+
+.block-tools__add-block {
+	background-image: url('../../../../assets/plus.svg');
+	background-size: 14px;
+}
+
+/* light theme */
+
+.light-theme .block-tools__tool:hover {
+	background-color: var(--btn-accent) !important;
+}

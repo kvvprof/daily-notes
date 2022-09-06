@@ -1,0 +1,35 @@
+.tag-settings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tag-settings__wrapper {
+	display: flex;
+
+	width: 100%;
+	margin: 3px 0;
+}
+
+.tag-settings__name {
+	flex: 1;
+
+	padding: 8px;
+
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+.tag-settings__color-picker {
+	margin: 0 5px;
+}
+
+/* light-theme */
+
+.light-theme .tag-settings {
+	background-color: var(--bg-light-2);
+}
+
+.light-theme .tag-settings__name {
+	color: var(--text-light);
+}

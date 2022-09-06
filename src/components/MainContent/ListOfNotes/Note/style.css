@@ -1,0 +1,61 @@
+.note {
+	cursor: pointer;
+
+	position: relative;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	height: 45vh;
+	padding: 15px;
+
+	background-color: var(--bg-dark);
+	border: 1px solid var(--btn-regular);
+	border-radius: 20px;
+
+	transition: 0.3s;
+}
+
+.note:hover {
+	border: 1px solid var(--btn-accent);
+
+	transition: 0.3s;
+}
+
+.note__updated {
+	margin-bottom: 5px;
+
+	font-size: 11px;
+	color: var(--text-grey);
+}
+
+.note__title {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+
+	font-size: 18px;
+	font-weight: bold;
+
+	border-bottom: 1px solid var(--btn-regular);
+}
+
+/* light-theme */
+
+.light-theme .note {
+	background-color: var(--bg-light-2);
+	border: 0.1px solid var(--btn-regular);
+}
+
+.light-theme .note:hover {
+	border: 0.1px solid var(--btn-accent);
+
+	transition: 0.3s;
+}
+
+.light-theme .note__tags {
+	background-color: var(--bg-light-2);
+}
+
+.light-theme .note__tag {
+	color: var(--text-light);
+}

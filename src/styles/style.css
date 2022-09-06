@@ -1,0 +1,111 @@
+@import-normalize;
+@import './fonts.css';
+@import './null.css';
+@import './variables.css';
+
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+
+	background-color: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--btn-regular);
+	border-top: 1px var(--bg-dark) solid;
+	border-left: 6px var(--bg-dark) solid;
+}
+
+::placeholder {
+	color: var(--text-grey);
+
+	opacity: 1;
+}
+
+body {
+	color: var(--text-light);
+
+	background-image: url('../assets/bg-dark.svg');
+	background-repeat: repeat;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 10px;
+}
+
+.accent-btn {
+	background-color: var(--btn-accent);
+
+	transition: 0.3s;
+}
+
+.accent-btn:hover {
+	background-color: var(--btn-accent-hover);
+
+	transition: 0.3s
+}
+
+.regular-btn {
+	padding: 7px;
+
+	font-size: 12px;
+
+	background-color: var(--btn-regular);
+	border: 1px solid var(--btn-regular);
+	border-radius: 5px;
+
+	transition: 0.3s;
+}
+
+.regular-btn:hover {
+	border: 1px solid var(--btn-accent);
+
+	transition: 0.3s;
+}
+
+.hidden {
+	overflow: hidden;
+
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+
+	line-height: 0;
+
+	opacity: 0;
+}
+
+/* light theme */
+
+.light-theme .regular-btn {
+	background-color: transparent;
+	border: 0.1px solid var(--btn-regular);
+}
+
+.light-theme .regular-btn:hover {
+	color: var(--text-light);
+
+	background-color: var(--btn-accent);
+}
+
+.light-theme .accent-btn {
+	color: var(--text-light);
+}
+
+.light-theme ::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+
+	background-color: var(--bg-light-2);
+}
+
+.light-theme ::-webkit-scrollbar-thumb {
+	background-color: var(--text-grey);
+	border-top: 1px solid var(--bg-light-2);
+	border-left: 6px solid var(--bg-light-2);
+}

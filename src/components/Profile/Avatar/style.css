@@ -1,0 +1,58 @@
+.avatar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.avatar__upload {
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+
+	background-color: var(--btn-regular);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: 3px solid var(--bg-dark);
+	border-radius: 100%;
+
+	transition: 0.3s;
+}
+
+.avatar__upload:hover {
+	border: 3px solid var(--btn-accent);
+
+	transition: 0.3s;
+}
+
+.avatar__upload > span {
+	font-size: 100px;
+	color: var(--text-grey);
+}
+
+.avatar__info {
+	margin-bottom: 20px;
+
+	font-size: 12px;
+	color: var(--text-grey);
+	text-align: center;
+}
+
+/* light theme */
+
+.light-theme .avatar__upload {
+	background-color: transparent;
+	border: 1px solid var(--btn-regular);
+}
+
+.light-theme .avatar__upload:hover {
+	border: 1px solid var(--btn-accent);
+}

@@ -1,0 +1,43 @@
+.color-panel {
+	display: flex;
+
+	border-radius: 5px;
+}
+
+.color-panel__color {
+	cursor: pointer;
+
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+
+	border-radius: 100%;
+
+	transition: 0.3s;
+}
+
+.color-panel__color:nth-child(1) {
+	background-color: var(--tag-1);
+}
+
+.color-panel__color:nth-child(2) {
+	background-color: var(--tag-2);
+}
+
+.color-panel__color:nth-child(3) {
+	background-color: var(--tag-3);
+}
+
+.color-panel__color:nth-child(4) {
+	background-color: var(--tag-4);
+}
+
+.color-panel__color:nth-child(5) {
+	background-color: var(--tag-5);
+}
+
+.color-panel__color:hover {
+	opacity: 0.6;
+
+	transition: 0.3s;
+}

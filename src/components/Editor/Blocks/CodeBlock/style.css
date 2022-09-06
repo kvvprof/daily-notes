@@ -1,0 +1,29 @@
+.code-block {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.code-block__textarea {
+	overflow: hidden;
+
+	width: 100%;
+	padding: 15px;
+
+	font-size: 13px;
+	font-weight: 100;
+	color: var(--text-code-dark);
+
+	background-color: var(--btn-regular);
+	border-radius: 5px;
+}
+
+/* light-theme */
+
+.light-theme .code-block__textarea {
+	font-weight: 300;
+	color: var(--text-code-light);
+
+	background-color: var(--bg-light);
+}

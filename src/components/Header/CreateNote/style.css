@@ -1,0 +1,14 @@
+.create-note {
+	padding: 10px;
+
+	font-size: 16px;
+
+	background-color: var(--btn-accent);
+	border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+	.create-note {
+		font-size: 14px;
+	}
+}

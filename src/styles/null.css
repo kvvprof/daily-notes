@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+
+	font-family: 'Lab Grotesque', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+	color: inherit;
+	text-decoration: none;
+
+	outline: none;
+}
+
+input,
+button,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	cursor: pointer;
+
+	color: inherit;
+}
+
+input {
+	color: inherit;
+}
+
+ul li {
+	list-style: none;
+}

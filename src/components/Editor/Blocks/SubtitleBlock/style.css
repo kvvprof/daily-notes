@@ -1,0 +1,21 @@
+.subtitle-block {
+	position: relative;
+}
+
+.subtitle-block__textarea {
+	overflow: hidden;
+
+	width: 100%;
+
+	font-size: 17px;
+	font-weight: 900;
+	color: var(--text-light);
+
+	background-color: transparent;
+}
+
+/* light theme */
+
+.light-theme .subtitle-block__textarea {
+	color: var(--text-dark);
+}

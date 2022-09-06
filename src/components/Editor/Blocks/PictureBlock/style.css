@@ -1,0 +1,45 @@
+.picture-block {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.picture-block__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.picture-block__upload {
+	width: 100%;
+
+	border-radius: 10px;
+}
+
+.picture-block__upload-area {
+	cursor: pointer;
+
+	width: 100%;
+	padding: 20px;
+
+	font-size: 14px;
+	color: var(--text-grey);
+	text-align: center;
+
+	border: 1px solid var(--btn-regular);
+	border-radius: 10px;
+
+	transition: 0.3s;
+}
+
+.picture-block__upload-area:hover {
+	border: 1px solid var(--btn-accent);
+
+	transition: 0.3s;
+}
+
+.picture-block__picture {
+	width: 100%;
+
+	border-radius: 10px;
+}

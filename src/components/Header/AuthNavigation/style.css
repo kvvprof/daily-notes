@@ -1,0 +1,27 @@
+.auth-navigation__link {
+	padding: 10px;
+
+	border-radius: 10px;
+
+	transition: 0.3s;
+}
+
+.auth-navigation__link:last-child {
+	margin-right: 0;
+}
+
+.auth-navigation__link--active {
+	background-color: var(--btn-accent);
+}
+
+.auth-navigation__link--active:hover {
+	background-color: var(--btn-accent-hover);
+
+	transition: 0.3s;
+}
+
+/* light theme */
+
+.light-theme .auth-navigation__link--active {
+	color: var(--text-light);
+}

@@ -1,0 +1,15 @@
+.counter {
+	font-size: 13px;
+	font-weight: 900;
+	color: var(--text-light);
+
+	opacity: 0.2;
+}
+
+/* light-theme */
+
+.light-theme .counter {
+	color: var(--text-grey);
+
+	opacity: 1;
+}

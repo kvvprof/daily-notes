@@ -1,0 +1,16 @@
+.block-panel {
+	position: absolute;
+	z-index: 20;
+	top: 65px;
+	right: 25px;
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 4px;
+}
+
+.editor__add-block-btn {
+	padding: 7px;
+
+	border-radius: 5px;
+}

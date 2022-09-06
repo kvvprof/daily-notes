@@ -1,0 +1,26 @@
+:root {
+	/* background */
+	--bg-light: #fff;
+	--bg-light-2: #f6f8fc;
+	--bg-dark: #1d1f24;
+
+	/* text */
+	--text-light: #fff;
+	--text-dark: #000;
+	--text-grey: #898e9f;
+	--text-code-dark: #dec082;
+	--text-code-light: #793a77;
+
+	/* button */
+	--btn-accent: #685ec5;
+	--btn-accent-hover: #594ebf;
+	--btn-regular: #2e323b;
+	--btn-danger: #ee7d57;
+
+	/* tag */
+	--tag-1: #2a63f2;
+	--tag-2: #5bb669;
+	--tag-3: #e17f4b;
+	--tag-4: #d7b63e;
+	--tag-5: #de586c;
+}

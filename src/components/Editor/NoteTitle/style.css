@@ -1,0 +1,16 @@
+.note-title {
+	width: 100%;
+	margin-bottom: 10px;
+
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--text-light);
+
+	background-color: transparent;
+}
+
+/* light-theme */
+
+.light-theme .note-title {
+	color: var(--text-dark);
+}

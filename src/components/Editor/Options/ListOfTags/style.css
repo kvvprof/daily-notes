@@ -1,0 +1,40 @@
+.list-of-tags {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5px;
+}
+
+.list-of-tags__tag {
+	cursor: pointer;
+
+	overflow: hidden;
+
+	margin-bottom: 5px;
+	padding: 7px;
+
+	font-size: 12px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	background-color: transparent;
+	border-radius: 7px;
+
+	transition: 0.3s;
+}
+
+.list-of-tags__tag:hover {
+	opacity: 0.5;
+
+	transition: 0.3s;
+}
+
+.list-of-tags__tag-manager {
+	margin-bottom: 5px;
+}
+
+/* light-theme */
+
+.light-theme .list-of-tags__tag {
+	color: var(--text-light);
+}
