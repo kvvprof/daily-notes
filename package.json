@@ -1,6 +1,7 @@
 {
 	"name": "daily-notes-client",
 	"version": "0.1.0",
+	"homepage": "https://kvvprof.github.io/daily-notes",
 	"private": true,
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.8.3",
@@ -12,6 +13,7 @@
 		"@types/react": "^18.0.15",
 		"@types/react-dom": "^18.0.6",
 		"axios": "^0.27.2",
+		"gh-pages": "^4.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-infinite-scroll-component": "^6.1.0",
@@ -30,7 +32,9 @@
 		"lint:css": "stylelint src",
 		"lint:css:fix": "npm run lint:css -- --fix",
 		"lint:es": "eslint --ext .js,.jsx,.ts,.tsx src",
-		"lint:es:fix": "npm run lint:es -- --fix"
+		"lint:es:fix": "npm run lint:es -- --fix",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"browserslist": {
 		"production": [
