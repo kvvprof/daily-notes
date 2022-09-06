@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/daily-notes/static/css/main.c7d6c599.css",
+    "main.js": "/daily-notes/static/js/main.ea9d6730.js",
+    "static/media/LabGrotesque-Italic.woff2": "/daily-notes/static/media/LabGrotesque-Italic.1759e8eed7e1d9de4831.woff2",
+    "static/media/LabGrotesque-MediumItalic.woff2": "/daily-notes/static/media/LabGrotesque-MediumItalic.54da6b3dcb9eedf094dd.woff2",
+    "static/media/LabGrotesque-ThinItalic.woff2": "/daily-notes/static/media/LabGrotesque-ThinItalic.4a210bf55e41f92e7c7b.woff2",
+    "static/media/LabGrotesque-BoldItalic.woff2": "/daily-notes/static/media/LabGrotesque-BoldItalic.3264b01ee8f8cbfe04fe.woff2",
+    "static/media/LabGrotesque-LightItalic.woff2": "/daily-notes/static/media/LabGrotesque-LightItalic.a68c09da0044a82050bc.woff2",
+    "static/media/LabGrotesque-BlackItalic.woff2": "/daily-notes/static/media/LabGrotesque-BlackItalic.7625dcaf645b96902f88.woff2",
+    "static/media/LabGrotesque-Thin.woff2": "/daily-notes/static/media/LabGrotesque-Thin.e4b6b78a8fd17ed0e8a6.woff2",
+    "static/media/LabGrotesque-Regular.woff2": "/daily-notes/static/media/LabGrotesque-Regular.f45d8fdb56a00269067a.woff2",
+    "static/media/LabGrotesque-Medium.woff2": "/daily-notes/static/media/LabGrotesque-Medium.03578f957623052bf1dd.woff2",
+    "static/media/LabGrotesque-Light.woff2": "/daily-notes/static/media/LabGrotesque-Light.098291affdb12aefd649.woff2",
+    "static/media/LabGrotesque-Bold.woff2": "/daily-notes/static/media/LabGrotesque-Bold.d824fbf31f33d239e3e1.woff2",
+    "static/media/LabGrotesque-Black.woff2": "/daily-notes/static/media/LabGrotesque-Black.2677af5370b6cd5cad48.woff2",
+    "static/media/bg-dark.svg": "/daily-notes/static/media/bg-dark.e0db44226c953c898d55b934365dbe22.svg",
+    "static/media/bg-light.svg": "/daily-notes/static/media/bg-light.ed01ce93c1340b961086adeb3ae85bda.svg",
+    "static/media/options.svg": "/daily-notes/static/media/options.c618c8649c998dee9497.svg",
+    "static/media/trash.svg": "/daily-notes/static/media/trash.996caf789e4b24b8f751.svg",
+    "index.html": "/daily-notes/index.html",
+    "static/media/arrowDown.svg": "/daily-notes/static/media/arrowDown.2cc0d8460eaba233978c.svg",
+    "static/media/arrowUp.svg": "/daily-notes/static/media/arrowUp.c8483d753458730dd0ce.svg",
+    "static/media/plus.svg": "/daily-notes/static/media/plus.a366138971de78f0a892.svg",
+    "main.c7d6c599.css.map": "/daily-notes/static/css/main.c7d6c599.css.map",
+    "main.ea9d6730.js.map": "/daily-notes/static/js/main.ea9d6730.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7d6c599.css",
+    "static/js/main.ea9d6730.js"
+  ]
+}
