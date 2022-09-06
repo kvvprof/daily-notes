@@ -26,7 +26,7 @@ const NoteBlock = (block: TBlock) => {
 					src={
 						block.data.link?.includes('/')
 							? block.data.link
-							: `http://localhost:3001/userFiles/${user?.user_id}/notes/${block.note_id}/${block.data.link}`
+							: `http://185.220.34.235:8080/userFiles/${user?.user_id}/notes/${block.note_id}/${block.data.link}`
 					}
 					alt=''
 				/>

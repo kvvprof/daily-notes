@@ -40,7 +40,7 @@ const Avatar = ({ user }: TAvatar) => {
 
 	const getAvatarUrl = () => {
 		if (user !== null) {
-			return `url('http://localhost:3001/userFiles/${user.user_id}/profile/${user.avatar}')`;
+			return `url('http://185.220.34.235:8080/userFiles/${user.user_id}/profile/${user.avatar}')`;
 		}
 	};
 

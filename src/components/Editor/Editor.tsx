@@ -53,8 +53,6 @@ const Editor = () => {
 		}
 	});
 
-	console.log(1);
-
 	return (
 		<div className='editor' style={{ display: isOpenNoteEditor ? 'block' : 'none' }}>
 			<div className='editor__closing-area' onClick={closeEditorHandler}></div>

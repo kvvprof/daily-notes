@@ -78,7 +78,7 @@ const PictureBlock = ({ block }: TEditorBlockPicture) => {
 					<img
 						className='picture-block__picture'
 						// eslint-disable-next-line max-len
-						src={`http://localhost:3001/userFiles/${user?.user_id}/notes/${currentNote?.note_id}/${block.data.link}`}
+						src={`http://185.220.34.235:8080/userFiles/${user?.user_id}/notes/${currentNote?.note_id}/${block.data.link}`}
 						alt=''
 					/>
 				)}
