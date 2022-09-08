@@ -1,5 +1,7 @@
 import { useRef } from 'react';
 
+import { API_URL } from '../../../constants/apiUrl';
+
 import { useAppDispatch, useAppSelector } from '../../../hooks/useRedux';
 import { showMessage } from '../../../store/app/appSlice';
 import { fileUpload } from '../../../store/user/userApi';
@@ -40,7 +42,7 @@ const Avatar = ({ user }: TAvatar) => {
 
 	const getAvatarUrl = () => {
 		if (user !== null) {
-			return `url('http://185.220.34.235:8080/userFiles/${user.user_id}/profile/${user.avatar}')`;
+			return `url('${API_URL}/userFiles/${user.user_id}/profile/${user.avatar}')`;
 		}
 	};
 

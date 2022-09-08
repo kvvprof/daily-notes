@@ -9,10 +9,10 @@ import { setAuthData } from '../user/userSlice';
 
 export const axiosConfig = (accessToken: string, dispatch: AppDispatch) => {
 	let currentAccessToken = accessToken;
+	axios.defaults.withCredentials = true;
 
 	const $api = axios.create({
-		withCredentials: false,
-		baseURL: API_URL
+		baseURL: `${API_URL}/api`
 	});
 
 	$api.interceptors.request.use((config) => {
@@ -31,14 +31,7 @@ export const axiosConfig = (accessToken: string, dispatch: AppDispatch) => {
 				originalRequest._isRetry = true;
 
 				try {
-					const response = await axios.get<TAuth>(`${API_URL}/user/refresh-tokens`, {
-						withCredentials: false,
-						headers: {
-							Authorization: `Bearer ${localStorage.refreshToken}`
-						}
-					});
-
-					localStorage.setItem('refreshToken', response.data.refreshToken);
+					const response = await axios.get<TAuth>(`${API_URL}/api/user/refresh-tokens`);
 
 					dispatch(setAuthData(response.data));
 

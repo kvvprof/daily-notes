@@ -73,11 +73,6 @@ export const appSlice = createSlice({
 
 		builder.addCase(reloadApp.rejected, (state, action: PayloadAction<any>) => {
 			state.appLoading = false;
-			if (action.payload === undefined || action.payload.includes('<!DOCTYPE html>')) {
-				state.errorMessage = defaultErrorMessage;
-			} else {
-				state.errorMessage = action.payload;
-			}
 		});
 
 		// Get notes

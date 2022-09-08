@@ -31,6 +31,9 @@ export const userSlice = createSlice({
 		},
 		setAvatar: (state, action: PayloadAction<string>) => {
 			state.user!.avatar = action.payload;
+		},
+		deleteAccessToken: (state) => {
+			state.accessToken = '';
 		}
 	},
 	extraReducers: (builder) => {
@@ -62,7 +65,6 @@ export const userSlice = createSlice({
 
 		builder.addCase(refreshTokens.fulfilled, (state, action: PayloadAction<TAuth>) => {
 			state.accessToken = action.payload.accessToken;
-			localStorage.refreshToken = action.payload.refreshToken;
 		});
 
 		// File upload
@@ -79,5 +81,5 @@ export const userSlice = createSlice({
 	}
 });
 
-export const { setAuthData, setAvatar } = userSlice.actions;
+export const { setAuthData, setAvatar, deleteAccessToken } = userSlice.actions;
 export default userSlice.reducer;

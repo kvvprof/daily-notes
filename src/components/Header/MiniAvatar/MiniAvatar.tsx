@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import { API_URL } from '../../../constants/apiUrl';
+
 import { useAppSelector } from '../../../hooks/useRedux';
 import './style.css';
 
@@ -8,7 +10,7 @@ const MiniAvatar = () => {
 
 	const getAvatarUrl = () => {
 		if (user !== null) {
-			return `url('http://185.220.34.235:8080/userFiles/${user.user_id}/profile/${user.avatar}')`;
+			return `url('${API_URL}/userFiles/${user.user_id}/profile/${user.avatar}')`;
 		}
 	};
 

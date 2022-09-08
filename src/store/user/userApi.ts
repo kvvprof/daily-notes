@@ -15,11 +15,13 @@ import { setAuthData } from './userSlice';
 import { showMessage } from '../app/appSlice';
 import { RootState, AppDispatch } from '../store';
 
+axios.defaults.withCredentials = true;
+
 // Registration
 
 export const registration = createAsyncThunk('auth/registration', async (credential: TCredential, thunkApi) => {
 	try {
-		const { data } = await axios.post<TAuth>(`${API_URL}/user/registration`, credential);
+		const { data } = await axios.post<TAuth>(`${API_URL}/api/user/registration`, credential);
 
 		if (data.currentUser) {
 			thunkApi.dispatch(setAuthData(data));
@@ -43,7 +45,7 @@ export const registration = createAsyncThunk('auth/registration', async (credent
 
 export const login = createAsyncThunk('auth/login', async (credential: TCredential, thunkApi) => {
 	try {
-		const { data } = await axios.post<TAuth>(`${API_URL}/user/login`, credential);
+		const { data } = await axios.post<TAuth>(`${API_URL}/api/user/login`, credential);
 
 		if (data.currentUser) {
 			thunkApi.dispatch(setAuthData(data));
@@ -63,15 +65,26 @@ export const login = createAsyncThunk('auth/login', async (credential: TCredenti
 	}
 });
 
+// Logout
+
+export const logout = createAsyncThunk('auth/logout', async (_, thunkApi) => {
+	try {
+		const { data } = await axios.delete<string>(`${API_URL}/api/user/logout`);
+
+		return data;
+	} catch (error: any) {
+		if (!error.response) {
+			throw error;
+		}
+		return thunkApi.rejectWithValue(error.response.data);
+	}
+});
+
 // Reload app
 
 export const reloadApp = createAsyncThunk('auth/reloadApp', async (_, thunkApi) => {
 	try {
-		const { data } = await axios.get<TAuth>(`${API_URL}/user/refresh-tokens`, {
-			headers: {
-				Authorization: `Bearer ${localStorage.refreshToken}`
-			}
-		});
+		const { data } = await axios.get<TAuth>(`${API_URL}/api/user/refresh-tokens`);
 
 		if (data.currentUser) {
 			thunkApi.dispatch(setAuthData(data));
@@ -93,11 +106,7 @@ export const reloadApp = createAsyncThunk('auth/reloadApp', async (_, thunkApi) 
 
 export const refreshTokens = createAsyncThunk('auth/refreshTokens', async (_, thunkApi) => {
 	try {
-		const { data } = await axios.get<TAuth>(`${API_URL}/user/refresh-tokens`, {
-			headers: {
-				Authorization: `Bearer ${localStorage.refreshToken}`
-			}
-		});
+		const { data } = await axios.get<TAuth>(`${API_URL}/api/user/refresh-tokens`);
 
 		return data;
 	} catch (error: any) {

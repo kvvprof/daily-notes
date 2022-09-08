@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 
@@ -35,7 +36,7 @@ const App = () => {
 
 	useEffect(() => {
 		dispatch(reloadApp());
-	}, [dispatch]);
+	}, []);
 
 	useEffect(() => {
 		if (accessToken === '') {
@@ -43,7 +44,6 @@ const App = () => {
 		} else {
 			navigate('/', { replace: true });
 		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [accessToken]);
 
 	if (isLoading) {

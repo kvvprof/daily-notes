@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
+import { API_URL } from '../../../../constants/apiUrl';
+
 import { useAppDispatch, useAppSelector } from '../../../../hooks/useRedux';
 import { showMessage } from '../../../../store/app/appSlice';
 import { setCurrentBlock, updatePictureLink } from '../../../../store/note/noteSlice';
@@ -78,7 +80,7 @@ const PictureBlock = ({ block }: TEditorBlockPicture) => {
 					<img
 						className='picture-block__picture'
 						// eslint-disable-next-line max-len
-						src={`http://185.220.34.235:8080/userFiles/${user?.user_id}/notes/${currentNote?.note_id}/${block.data.link}`}
+						src={`${API_URL}/userFiles/${user?.user_id}/notes/${currentNote?.note_id}/${block.data.link}`}
 						alt=''
 					/>
 				)}

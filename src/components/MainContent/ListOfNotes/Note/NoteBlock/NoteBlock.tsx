@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
 import ReactTextareaAutosize from 'react-textarea-autosize';
 
+import { API_URL } from '../../../../../constants/apiUrl';
+
 import { useAppSelector } from '../../../../../hooks/useRedux';
 
 import { TBlock } from '../../../../../types/note';
@@ -26,7 +28,7 @@ const NoteBlock = (block: TBlock) => {
 					src={
 						block.data.link?.includes('/')
 							? block.data.link
-							: `http://185.220.34.235:8080/userFiles/${user?.user_id}/notes/${block.note_id}/${block.data.link}`
+							: `${API_URL}/userFiles/${user?.user_id}/notes/${block.note_id}/${block.data.link}`
 					}
 					alt=''
 				/>

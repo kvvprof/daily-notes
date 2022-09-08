@@ -2,16 +2,20 @@ import { useNavigate } from 'react-router-dom';
 
 import Avatar from './Avatar/Avatar';
 
-import { useAppSelector } from '../../hooks/useRedux';
+import { useAppDispatch, useAppSelector } from '../../hooks/useRedux';
 
 import './style.css';
+import { logout } from '../../store/user/userApi';
+import { deleteAccessToken } from '../../store/user/userSlice';
 
 const Profile = () => {
 	const user = useAppSelector((state) => state.userSlice.user);
 	const navigate = useNavigate();
+	const dispatch = useAppDispatch();
 
-	const exitHandler = () => {
-		localStorage.removeItem('refreshToken');
+	const exitHandler = async () => {
+		await dispatch(logout());
+		dispatch(deleteAccessToken);
 		navigate(0);
 	};
 
