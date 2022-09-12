@@ -1,4 +1,4 @@
-# Service for creating, editing and storing notes
+# Service for creating, editing and storing notes (FRONTEND)
 
 ## PERN stack, JSON Web Token Authentication
 
