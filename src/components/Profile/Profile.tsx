@@ -1,5 +1,3 @@
-import { useNavigate } from 'react-router-dom';
-
 import Avatar from './Avatar/Avatar';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/useRedux';
@@ -10,13 +8,13 @@ import { deleteAccessToken } from '../../store/user/userSlice';
 
 const Profile = () => {
 	const user = useAppSelector((state) => state.userSlice.user);
-	const navigate = useNavigate();
+
 	const dispatch = useAppDispatch();
 
 	const exitHandler = async () => {
 		await dispatch(logout());
 		dispatch(deleteAccessToken);
-		navigate(0);
+		window.location.href = '/';
 	};
 
 	return (
