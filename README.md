@@ -6,9 +6,9 @@
 
 **You can register or use a test account:**
 
-test@test.ru
-qwerty123
+login: test@test.ru
+password: qwerty123
 
 [👉 **BACKEND**]()
 
-![DEMO]()
+![DEMO](https://github.com/kvvprof/daily-notes/blob/master/demo.png?raw=true)
